@@ -1,8 +1,9 @@
 body{
-    margin: 0 auto;
+    margin: 30 px;
 }
 
 .login-form{
+    justify-content: center;
     background-color: beige;
     padding:10px;
 }
