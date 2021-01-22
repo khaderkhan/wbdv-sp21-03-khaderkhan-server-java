@@ -1,0 +1,9 @@
+body{
+    margin: 30 px;
+}
+
+.signup-form{
+    justify-content: center;
+    background-color: beige;
+    padding:10px;
+}
