@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="profile.style.client.css">
+    <title>Profile</title>
+</head>
+<body>
+<div class="container">
+    <h1> Profile</h1>
+    <form class ="profile-form">
+        <div class="form-group row">
+            <label for="username" class="col-sm-2 col-form-label">
+                Username </label>
+            <div class="col-sm-10">
+                <input class="form-control signup-username"
+                       id="username"
+                       placeholder="Alice">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="phone" class="col-sm-2 col-form-label">
+                Password </label>
+            <div class="col-sm-10">
+                <input type="tel" class="form-control profile-phone"
+                       id="password" placeholder="(555) 123-4324">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="email" class="col-sm-2 col-form-label">
+                Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control profile-email"
+                       id="email" placeholder="alice@wonderland.com">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="dob" class="col-sm-2 col-form-label">
+                Date of Birth</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control profile-email" id="dob">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="dob" class="col-sm-2 col-form-label">
+                Role</label>
+            <div class="col-sm-10">
+                <select name="profile-role" id="profile-role-dropdown">
+                    <option value="faculty">Faculty</option>
+                    <option value="student" selected>Student </option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <button class="btn btn-primary btn-block profile-update">Update</button>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <button class="btn btn-primary btn-block profile-logout">Logout</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
