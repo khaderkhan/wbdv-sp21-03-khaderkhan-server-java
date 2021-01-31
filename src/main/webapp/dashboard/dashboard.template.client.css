@@ -1,0 +1,35 @@
+body {
+    background-color: aqua;
+}
+.wbdv-sticky-top {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+.wbdv-padding-5px {
+    padding: 5px;
+    background-color: blueviolet;
+}
+
+.padding-icon {
+    padding-right: 10px;
+}
+
+.container {
+    background-color: aquamarine;
+}
+.nav-text{
+    color: white;
+    font-family: FontAwesome;
+}
+.placeholder-navbar{
+    font-size: 20px;
+    font-family: FontAwesome;
+}
+
+.font-awesome-icon {
+    color: white;
+    background-color: red;
+}
+
