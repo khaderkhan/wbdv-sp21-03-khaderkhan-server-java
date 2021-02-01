@@ -30,6 +30,10 @@ body {
 
 .font-awesome-icon {
     color: white;
-    background-color: red;
+}
+
+.font-awesome-icon-bottom {
+    color: blue;
+    padding: 20px;
 }
 
