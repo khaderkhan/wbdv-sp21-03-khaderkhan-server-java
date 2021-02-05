@@ -6,7 +6,23 @@
     var userService = new AdminUserServiceClient();
     $(main);
 
-    function main() { … }
+    function main() {
+        $usernameFld = $('#usernameFld');
+        $passwordFld = $('#passwordFld')
+        $firstNameFld = $('#firstNameFld')
+        $lastNameFld = $('#lastNameFld')
+        $roleFld = $('')
+                            $removeBtn =
+                                $editBtn =
+                                    $createBtn =
+                                        $userRowTemplate =
+                                            $tbody = jQuery("tbody")
+
+
+
+
+
+    }
     function createUser() { … }
     function deleteUser() { … }
     function selectUser() { … }
