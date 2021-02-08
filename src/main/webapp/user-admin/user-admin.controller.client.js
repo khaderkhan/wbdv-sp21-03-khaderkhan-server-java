@@ -54,17 +54,35 @@
             .then(renderUsers)
     }
      function deleteUser(event) {
+         console.log("eventTarget",event.target)
+         console.log("eventtt",event)
+         var deleteBtn = jQuery(event.target)
+         var theClass = deleteBtn.attr("class")
+         var theIndex = deleteBtn.attr("id")
+         console.log("hereeeee=====>", theIndex)
+         var theId = allUsers[theIndex]._id
+         console.log(theClass)
+         console.log(theIndex)
 
+         userService.deleteUser(theId)
+             .then(function (status) {
+                 allUsers.splice(theIndex, 1)
+                 renderUsers(allUsers)
+             })
      }
+     var selectedUser = null
      function selectUser(event) {
          const selectBtn = jQuery(event.target)
          const theId = selectBtn.attr("id")
-         console.log("courses====>>>", allUsers)
 
-         selectedCourse = allUsers.find(user => user._id === theId)
-         titleFld.val(selectedCourse.title)
-         $seatsFld.val(selectedCourse.seats)
-         $semesterFld.val(selectedCourse.semester)
+         selectedUser = allUsers.find(user => user._id === theId)
+         console.log("selectedUsers here=====>>", selectedUser)
+
+         $("#usernameFld").val(selectedUser.username);
+         $("#passwordFld").val(selectedUser.password);
+         $("#firstNameFld").val(selectedUser.firstName);
+         $("#lastNameFld").val(selectedUser.lastName);
+         $("#roleFld").val(selectedUser.role);
 
      }
     // function updateUser() { … }
@@ -74,12 +92,6 @@
         allUsers = users
         for(let u in users) {
             const user = users[u]
-            // console.log("user here is ===>>", user)
-            // const rowClone = $userRowTemplate.clone();
-            // rowClone.removeClass('wbdv-hidden');
-            // rowClone.find('.wbdv-username').html(user.username);
-            // $tbody.append(rowClone);
-
 
             $tbody
                 .prepend(`

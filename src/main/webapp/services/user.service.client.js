@@ -35,7 +35,8 @@ function AdminUserServiceClient() {
         }).then(response => response.json())
     }
     function deleteUser(userId) {
-        return fetch(`${self.url}/${courseId}`,
+        console.log("user here====>>", userId)
+        return fetch(`${self.url}/${userId}`,
             {method: 'DELETE'})
     }
 }
