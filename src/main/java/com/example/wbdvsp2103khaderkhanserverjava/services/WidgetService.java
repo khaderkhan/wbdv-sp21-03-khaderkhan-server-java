@@ -38,6 +38,7 @@ public class WidgetService {
 //        return widget;
     }
     public List<Widget> findAllWidgets() {
+        System.out.println("Coming in now 1");
         return repository.findAllWidgets();
 //        return (List<Widget>) repository.findAll();
 //        return widgets;
@@ -67,6 +68,13 @@ public class WidgetService {
 
         originalWidget.setText(newWidget.getText());
         originalWidget.setSrc(newWidget.getSrc());
+//        originalWidget.setWidgetOrder(newWidget.getWidgetOrder());
+        originalWidget.setCssClass(newWidget.getCssClass());
+        originalWidget.setStyle(newWidget.getStyle());
+        originalWidget.setValue(newWidget.getValue());
+        originalWidget.setHeight(newWidget.getHeight());
+        originalWidget.setWidth(newWidget.getWidth());
+        originalWidget.setOrdered(newWidget.getOrdered());
 
         repository.save(originalWidget);
         return 1;

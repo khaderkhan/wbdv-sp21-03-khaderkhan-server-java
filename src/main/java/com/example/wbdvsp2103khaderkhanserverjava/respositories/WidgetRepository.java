@@ -9,6 +9,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
+// CRUD repository for JAVA
 
 public interface WidgetRepository
         extends CrudRepository<Widget, Long> {

@@ -9,6 +9,43 @@ public class Widget {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String topicId;
+//    private int widgetOrder;
+    private String cssClass;
+    private String Style;
+    private String value;
+
+//    public int getWidgetOrder() {
+//        return widgetOrder;
+//    }
+
+//    public void setWidgetOrder(int widgetOrder) {
+//        this.widgetOrder = widgetOrder;
+//    }
+
+    public String getCssClass() {
+        return cssClass;
+    }
+
+    public void setCssClass(String cssClass) {
+        this.cssClass = cssClass;
+    }
+
+    public String getStyle() {
+        return Style;
+    }
+
+    public void setStyle(String style) {
+        Style = style;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
 
     private String type;
     private Integer size;
@@ -66,8 +103,6 @@ public class Widget {
     public void setTopicId(String topicId) {
         this.topicId = topicId;
     }
-
-    private String topicId;
 
     public Long getId() {
         return id;
